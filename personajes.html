@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagenes/Friends_Logo.png">
+    <script src="https://kit.fontawesome.com/17d6482aac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagenes/Friends_Logo.png" alt="Logo Friends"> 
+        </div>
+        <a href="javascript:void(0);" class="icon"  onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contactarnos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="personajes">
+            <div>
+                <div>
+                    <img src="imagenes/rossFriends.jpg" alt="Ross">
+                    <h4>Ross:</h4>
+                    <p>Es arrogante, inteligente (tiene un doctorado), educado, reflexivo, amable y sarcástico. Lo podemos considerar como socialmente torpe y cumpliendo con los típicos estereotipos del “nerd”</p>
+                </div>
+                <div>
+                    <img src="imagenes/rachelFriends.jpg" alt="Rachel">
+                    <h4>Rachel:</h4>
+                    <p>Es muy superficial, egoísta. Cumple del rol de la reina del drama. A lo largo de la serie podemos notar como va madurando y volviéndose más independiente, sobre todo cuando tiene a su hija. </p>
+                </div>
+            </div>
+
+            <div>
+                <div id="chan">
+                    <img src="imagenes/chandlerFriends.jpg" alt="Chandler">
+                    <h4>Chandler:</h4>
+                    <p>Es impetuoso, loco, muy defensivo, gracioso usando sarcasmo, leal, tierno y romántico en pocos momentos y tímido. Le encanta burlarse de sus amigos, pero también ayuda a mantenerlos humildes. En el transcurso de la serie podemos ver que es un buen amigo y esposo.</p>
+                </div>
+                <div>
+                    <img src="imagenes/monicaFriends.jpg" alt="Monica">
+                    <h4>Monica:</h4>
+                    <p>Es una persona perfeccionista, obsesiva-compulsiva, cariñosa, mandona, perseverante, competitiva y resolutiva. Se la puede considerar como la “madre” del grupo y el pegamento del mismo</p>
+                </div>
+            </div>
+
+            <div>
+                <div id="joey">
+                    <img src="imagenes/joeyFriends.jpg" alt="Joey">
+                    <h4>Joey:</h4>
+                    <p> Es muy mujeriego, fanático de la comida, una persona simple, extrovertido, tolerante, agradable, sarcástico, no es tan inteligente en comparación de sus amigos y en varios momentos muestra su lado infantil que hace contraste con su fama de mujeriego</p>
+                </div>
+                <div>
+                    <img src="imagenes/phoebeFriends.jpg" alt="Phoebe">
+                    <h4>Phoebe:</h4>
+                    <p>Se la puede describir como ingenua, inocente, tierna en ciertos momentos, espontánea, creativa, buena amiga y la ambientalista del grupo de amigos.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

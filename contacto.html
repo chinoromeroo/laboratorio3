@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagenes/Friends_Logo.png">
+    <script src="https://kit.fontawesome.com/17d6482aac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagenes/Friends_Logo.png" alt="Logo Friends"> 
+        </div>
+        <a href="javascript:void(0);" class="icon"  onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contactarnos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="form" action="">
+        <h4>Contactate con nosotros</h4>
+        <div class="fromContenedor">
+            <div class="formGrupo">
+                <input type="text" id="name" class="inputForm" placeholder="">
+                <label for="name" class="labelForm">Nombre </label>
+                <span class="spanForm"></span>
+            </div>
+            <div class="formGrupo">
+                <input type="text" id="lastName" class="inputForm" placeholder="">
+                <label for="lastName" class="labelForm">Apellido </label>
+                <span class="spanForm"></span>
+            </div>
+            <div class="formGrupo">
+                <input type="email" id="email" class="inputForm">
+                <label for="email" class="labelForm">Correo Electronico </label>
+                <span class="spanForm"></span>
+            </div>
+            <div class="formGrupo">
+                <textarea id="texto" class="inputForm" cols="30" rows="10"></textarea>
+                <label for="texto" id="mensajeLabel" class="labelForm">Mensaje </label>
+                <span class="spanForm"></span>
+            </div>
+            <input type="submit" class="botonesForm" value="Enviar">
+            <input type="reset" class="botonesForm" value="Borrar">
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

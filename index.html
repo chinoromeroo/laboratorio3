@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="imagenes/Friends_Logo.png">
+    <script src="https://kit.fontawesome.com/17d6482aac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagenes/Friends_Logo.png" alt="Logo Friends"> 
+        </div>
+        <a href="javascript:void(0);" class="icon"  onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contactarnos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+            <div>
+                <img src="imagenes/portada.jpg" alt="Protagonistas tomando un licuado">
+            </div>
+        </article>
+        <article>
+            <div id="contenedor">
+                <h2>Sinopsis</h2>
+                <p>Monica, Rachel, Phoebe, Chandler, Ross y Joey son seis amigos treintañeros que viven en Nueva York. Juntos afrontan con humor las dificultades propias de su edad: líos amorosos, trabajo, familia y su propia convivencia. </p>
+                <p>Estrenada en septiembre de 1994, "Friends" se convirtió rápidamente en la serie favorita del público joven y urbanita de Estados Unidos, que se identificó al instante con las peripecias vitales de sus protagonistas. Así, en su temporada de debut, consiguió colocarse como el octavo show con más audiencia de su país, por delante de clásicos del género, como "Frasier" o "Loco por ti". Al año siguiente se encaramó a la tercera plaza del ránking y, desde entonces, no volvió a bajar del cuarto puesto en sus diez temporadas en antena.</p>
+                <h2>Protagonistas</h2>
+                <p>Ross, Joey, Chandler, Mónica, Rachel y Phoebe</p>
+                <h2>Cresadores y Productores</h2>
+                <p>Martta Kauffman y David Crane</p>
+                <h2>Direcotres</h2>
+                <p>Gary Halvorson, Kevin S, Bright, Gail Mancuso y Michael Lembeck</p>
+                <h2>Emisión</h2>
+                <p>22 Septiembre 1994 hasta 6 Mayo 2004</p>
+                <h2>Temporadas y episodios</h2>
+                <p>10 temporadas y 237 episodios</p>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <a id="facebook" href="https://www.facebook.com/friends.tv/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+        <a id="twitter" href="https://twitter.com/FriendsTV"><i  class="fa-brands fa-twitter" ></i></a>
+        <a id="instagram" href="https://www.instagram.com/friends/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com/@Friends"><i class="fa-brands fa-youtube"></i></a>
+    </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>
