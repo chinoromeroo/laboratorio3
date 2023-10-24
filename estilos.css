@@ -260,11 +260,12 @@ footer a{
         z-index: 1;
     }
     header div, header a {
-        flex: 1 0 50%;
+        flex: 1 0 25%;
     }
     header nav {
         flex-basis: 100%;
     }
+
     .icon{
         display: block;
         padding-right: 0.6rem;
