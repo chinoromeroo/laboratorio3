@@ -8,47 +8,48 @@ body{
 }
 
 /*ESTILOS PERSONAJES*/
-.personajes div{
-    display: flex;
-    margin: 1.1%;
-}
-
-.personajes div div img{
+.protagonistas article img{
     transition: 300ms;
     filter: brightness(60%) contrast(100%);
 }
 
-.personajes div div img:hover{
+.protagonistas article img:hover{
     filter: brightness(100%) contrast(100%);
 }
 
-.personajes div div h4{
-    display: inline;
-    padding-left: 2%;
-    padding-top: 1%;
-    height: 10%;
-}
-
-.personajes div div p{
-    display: inline;
-    padding-top: 7%;
+#Ross{
+    width: 45%;
     text-align: center;
-    width: 30%;
-}
-/*BUSCAR OTRA SOLUCION SE DISTORCIONAN LAS IMAGENES*/
-/*#chan{
-    width: 90%;
-}
-#chan img{
-    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
 }
 
-#joey{
-    width: 75%;
+#Chandler, #Joey{
+    width: 45%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    margin-top: 3%;
 }
-#joey img{
-    width: 200px;
-}*/
+
+#Rachel{
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+}
+
+#Monica, #Phoebe{
+    width: 35%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+    margin-top: 3%;
+}
 
 /*ESTILOS INICIO*/
 header{
@@ -309,4 +310,6 @@ footer a{
     }
 
     /*ESTILOS PERSONAJES MEDIA QUERIES*/
+    #Ross, #Chandler, #Joey{margin-left: 1.5%;}
+    #Rachel, #Monica, #Phoebe{left: 7%;}
 }
