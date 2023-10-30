@@ -17,6 +17,10 @@ body{
     filter: brightness(100%) contrast(100%);
 }
 
+.protagonistas article h2{
+    font-size: 17px;
+}
+
 #Ross{
     width: 45%;
     text-align: center;
@@ -141,7 +145,7 @@ footer a{
     padding: 10px;
 }
 
-.Temporadas div h4{
+.Temporadas div h2{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-size: 20px;
@@ -167,7 +171,7 @@ footer a{
 }
 
 /*ESTILOS DE GALERIA*/
-.galeria h4{
+.galeria h2{
     font-size: 20px;
     padding-left: 1.5%;
 }
@@ -194,7 +198,7 @@ footer a{
     text-align: center;
 }
 
-.form h4{
+.form h2{
     font-size: 20px;
     margin-bottom: 80px;
 }
