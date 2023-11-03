@@ -7,56 +7,16 @@ body{
 	font-family: 'Rubik', sans-serif;
 }
 
-/*ESTILOS PERSONAJES*/
-.protagonistas article img{
-    transition: 300ms;
-    filter: brightness(60%) contrast(100%);
-}
-
-.protagonistas article img:hover{
-    filter: brightness(100%) contrast(100%);
-}
-
-.protagonistas article h2{
-    font-size: 17px;
-}
-
-#Ross{
-    width: 45%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
+h1{
+    font-size: 25px;
     margin-left: 3%;
+    margin-top: 2%;
 }
 
-#Chandler, #Joey{
-    width: 45%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 3%;
-    margin-top: 3%;
-}
-
-#Rachel{
-    width: 35%;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    left: 7.9%;
-}
-
-#Monica, #Phoebe{
-    width: 35%;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    left: 7.9%;
-    margin-top: 3%;
-}
 
 /*ESTILOS INICIO*/
 header{
+    background-color: #1C7C54;
 	padding-top: 2%;
 	padding-right: 1%;
 	padding-bottom: 2%;
@@ -65,10 +25,14 @@ header{
 	justify-content: space-between;
 }
 
+header div img{
+    width: 150px;
+}
+
 .icon{display: none;}
 
 nav ul {
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 nav ul li{
@@ -79,21 +43,66 @@ nav ul li a{
     font-size: 1.2rem;
     margin-right: 2rem;
     text-transform: uppercase;
-    color: black;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    height: 100%;
+}
+
+.menu .temp .submenu{
+    display: none;
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0;
+    background-color: #196e4b;
+    width: 140px;
+}
+
+.submenu li {
+    list-style: none;
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+}
+
+.submenu li a{font-size: 15px;}
+
+.temp:hover .submenu{
+    display: flex;
+    flex-direction: column;
 }
 
 .principal div img{
     width: 70%;
     margin-left: 15%;
     margin-bottom: 3%;
+    margin-top: 2%;
 }
 
-h1{
-    width: 200px;
+section h1{
+    font-size: 40px;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 15%;
+}
+
+#contenedor h2{
     padding-top: 0.5%;
     padding-right: 0.5%;
     padding-bottom: 0.5%;
-    padding-left: 1%;
+    margin-left: 15%;
+}
+
+#contenedor p{
+    padding-bottom: 2%;
+    margin-left: 16%;
+    width: 70%;
 }
 
 a{
@@ -101,6 +110,10 @@ a{
 }
 
 footer{
+    background-color: #1C7C54;
+}
+
+footer div{
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -108,14 +121,21 @@ footer{
 }
 
 
-footer a{
-    color: black;
+footer div a{
+    color: white;
     font-size: 2rem;
 	max-width: 2.5rem;
 	width: 100%;
 	height: auto;
 	margin-right: 3%;
     transition: 300ms;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-right: 50px;
 }
 
 #facebook:hover{
@@ -132,8 +152,61 @@ footer a{
 
 #youtube:hover{
     color: #c4302b;
-
+    
 }
+/*ESTILOS PERSONAJES*/
+.protagonistas article img{
+    transition: 300ms;
+    filter: brightness(60%) contrast(100%);
+}
+
+.protagonistas article img:hover{
+    filter: brightness(100%) contrast(100%);
+}
+
+.protagonistas article h2{
+    font-size: 17px;
+}
+
+#Ross{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#Chandler, #Joey{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#Rachel{
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+    margin-top: 3%;
+}
+
+#Monica, #Phoebe{
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+    margin-top: 3%;
+}
+
+#Joey{margin-bottom: 2%;}
+#Phoebe{margin-bottom: 2%;}
+#Ross img, #Chandler img, #Joey img{margin-left: 38%;}
+#Rachel img, #Monica img, #Phoebe img{margin-left: 35%;}
+#Ross h2, #Chandler h2, #Joey h2, #Rachel h2, #Monica h2, #Phoebe h2{text-align: center; font-size: 19px;}
+#Ross p, #Chandler p, #Joey p, #Rachel p, #Monica p, #Phoebe p{font-size: 17px;}
+
 /*ESTILOS TEMPORADAS*/
 .Temporadas div{
     margin: 1%;
@@ -148,38 +221,24 @@ footer a{
 .Temporadas div h2{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    font-size: 20px;
+    font-size: 22px;
+    color: #FC9E4F;
 }
 
 .Temporadas div p{
+    text-align: left;
     padding-bottom: 2%;
     padding-left: 2%;
     width: 95%;
 }
 
-#contenedor h2{
-    padding-top: 0.5%;
-    padding-right: 0.5%;
-    padding-bottom: 0.5%;
-    padding-left: 1%;
-}
-
-#contenedor p{
-    padding-bottom: 2%;
-    padding-left: 2%;
-    width: 70%;
-}
 
 /*ESTILOS DE GALERIA*/
-.galeria h2{
-    font-size: 20px;
-    padding-left: 1.5%;
-}
-
 .galeria a img{
     width: 200px;
-    margin-top: 2.2%;
+    margin-top: 1%;
     margin-left: 1.6%;
+    margin-bottom: 1.2%;
     transition: 300ms;
 }
 
@@ -188,14 +247,16 @@ footer a{
 }
 /*ESTILOS DE CONTACTO*/
 .form{
-    background-color: rgb(226, 241, 215);
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 90%;
     max-width: 400px;
     padding: 5% 3%;
-    border-radius: 10px;
     box-shadow: 0 5px 10px -5px (0 0 0 / 30%);
     text-align: center;
+    border: black solid;
+    border-radius: 5%;
 }
 
 .form h2{
@@ -260,13 +321,14 @@ footer a{
     background-color: #2648ac;
 }
 
+
 /*ESTILOS MEDIA QUERIES*/
 @media (max-width: 480px){
     header{
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        background-color: #ffffff;
+        background-color: #1C7C54;
         position: sticky;
         top: 0;
         z-index: 1;
@@ -286,6 +348,13 @@ footer a{
     nav ul{
         display: none;
     }
+
+    .menu{display: none;}
+    .menu .temp .submenu{
+        margin-left: 280px;
+        width: 25%;
+    }
+    .menu .temp .submenu li a{margin-right: 0px;}
 
     nav.responsive ul{
         display: block;
@@ -308,19 +377,30 @@ footer a{
         margin-right: auto;
     }
     footer{
-        height: 80px;
+        height: 150px;
         justify-content: space-evenly;
     }
-    footer img{
-        max-width: 3rem;
+    footer div a{text-align: center;}
+    
+    footer p{
+        text-align: center;
+        margin-right: 0px;
     }
+
+    h1{font-size: 25px; margin-top: 5px; margin-bottom: 5px;}
+
     /*ESTILOS GALERIA MEDIA QUERIES*/
     .galeria a{
         display: inline;
         margin-left: 17px;
     }
-
     /*ESTILOS PERSONAJES MEDIA QUERIES*/
-    #Ross, #Chandler, #Joey{margin-left: 1.5%;}
-    #Rachel, #Monica, #Phoebe{left: 7%;}
+    .protagonistas #Ross, #Rachel, #Monica, #Joey, #Chandler, #Phoebe{
+        display: block;
+        width: 92%;
+    }
+    .protagonistas #Ross img, #Chandler img, #Joey img{margin-left: 120px; }
+    .protagonistas #Phoebe img, #Monica img, #Rachel img{margin-left: 100px; }  
+    .protagonistas #Rachel h2, #Phoebe h2, #Monica h2{margin-right: 35px; }
+    .protagonistas #Ross p, #Chandler p, #Joey p, #Rachel p, #Phoebe p, #Monica p{font-size: 15px;}
 }
