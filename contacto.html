@@ -19,18 +19,18 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
                 <li class="temp">
-                    <a href="temporadas.html">Temporadas</a>
+                    <a>Temporadas</a>
                     <ul class="submenu">
-                        <li><a href="temporadas.html #Temporada1">Temp 1</a></li>
-                        <li><a href="temporadas.html #Temporada2">Temp 2</a></li>
-                        <li><a href="temporadas.html #Temporada3">Temp 3</a></li>
-                        <li><a href="temporadas.html #Temporada4">Temp 4</a></li>
-                        <li><a href="temporadas.html #Temporada5">Temp 5</a></li>
-                        <li><a href="temporadas.html #Temporada6">Temp 6</a></li>
-                        <li><a href="temporadas.html #Temporada7">Temp 7</a></li>
-                        <li><a href="temporadas.html #Temporada8">Temp 8</a></li>
-                        <li><a href="temporadas.html #Temporada9">Temp 9</a></li>
-                        <li><a href="temporadas.html #Temporada10">Temp 10</a></li>
+                        <li><a href="temporadas.html#Temporada1">Temp 1</a></li>
+                        <li><a href="temporadas.html#Temporada2">Temp 2</a></li>
+                        <li><a href="temporadas.html#Temporada3">Temp 3</a></li>
+                        <li><a href="temporadas.html#Temporada4">Temp 4</a></li>
+                        <li><a href="temporadas.html#Temporada5">Temp 5</a></li>
+                        <li><a href="temporadas.html#Temporada6">Temp 6</a></li>
+                        <li><a href="temporadas.html#Temporada7">Temp 7</a></li>
+                        <li><a href="temporadas.html#Temporada8">Temp 8</a></li>
+                        <li><a href="temporadas.html#Temporada9">Temp 9</a></li>
+                        <li><a href="temporadas.html#Temporada10">Temp 10</a></li>
                     </ul>
                 </li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -38,33 +38,37 @@
             </ul>
         </nav>
     </header>
-    <form class="form" action="">
-        <h2>Contactate con nosotros</h2>
-        <div class="fromContenedor">
-            <div class="formGrupo">
-                <input type="text" id="name" class="inputForm" placeholder="">
-                <label for="name" class="labelForm">Nombre </label>
-                <span class="spanForm"></span>
+    <!-- BUSCAR MEJOR CALIDAD DE FOTO --- PROBAR SOMBREADO NEGRO DE FONDO -->
+    <div class="contenedorContacto">
+        <form class="form" action="">
+            <h2>Contactate con nosotros</h2>
+            <div class="fromContenedor">
+                <div class="formGrupo">
+                    <input type="text" id="name" class="inputForm" placeholder="">
+                    <label for="name" class="labelForm">Nombre </label>
+                    <span class="spanForm"></span>
+                </div>
+                <div class="formGrupo">
+                    <input type="text" id="lastName" class="inputForm" placeholder="">
+                    <label for="lastName" class="labelForm">Apellido </label>
+                    <span class="spanForm"></span>
+                </div>
+                <div class="formGrupo">
+                    <input type="email" id="email" class="inputForm">
+                    <label for="email" class="labelForm">Correo Electronico </label>
+                    <span class="spanForm"></span>
+                </div>
+                <div class="formGrupo">
+                    <textarea id="texto" class="inputForm" cols="30" rows="10"></textarea>
+                    <label for="texto" id="mensajeLabel" class="labelForm">Mensaje </label>
+                    <span class="spanForm"></span>
+                </div>
+                <input type="submit" class="botonesForm" value="Enviar">
+                <input type="reset" class="botonesForm" value="Borrar">
             </div>
-            <div class="formGrupo">
-                <input type="text" id="lastName" class="inputForm" placeholder="">
-                <label for="lastName" class="labelForm">Apellido </label>
-                <span class="spanForm"></span>
-            </div>
-            <div class="formGrupo">
-                <input type="email" id="email" class="inputForm">
-                <label for="email" class="labelForm">Correo Electronico </label>
-                <span class="spanForm"></span>
-            </div>
-            <div class="formGrupo">
-                <textarea id="texto" class="inputForm" cols="30" rows="10"></textarea>
-                <label for="texto" id="mensajeLabel" class="labelForm">Mensaje </label>
-                <span class="spanForm"></span>
-            </div>
-            <input type="submit" class="botonesForm" value="Enviar">
-            <input type="reset" class="botonesForm" value="Borrar">
-        </div>
-    </form>
+        </form>
+        <img src="imagenes/FriendsContacto.jpg" alt="Protagonistas apoyando la cabeza sobre la del otro">
+    </div>
     <footer>
         <div>
             <a id="facebook" href="https://www.facebook.com/friends.tv/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
